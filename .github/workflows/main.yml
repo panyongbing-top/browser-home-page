@@ -43,7 +43,7 @@ jobs:
     # SSH User name
             username: root
     # Private key
-            key: ${SSH_KEY} 
+            password: Aabb1314.
       
         
       
