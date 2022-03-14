@@ -35,15 +35,15 @@ jobs:
         with:
             source: 'dist/*'
     # SSH address
-            host: 42.193.117.25
+            host: ${{REMOTE_HOST}}
     # Remote dir path
-            target: '/www/wwwroot/42.193.117.25.3'
+            target: ${{REMOTE_PATH}}
     # SSH Port
             port: 22
     # SSH User name
-            username: root
+            username: ${{REMOTE_NAME}}
     # Private key
-            password: Aabb1314.
+            key: ${{SSH_KEY}}
       
         
       
