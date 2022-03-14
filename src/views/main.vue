@@ -314,7 +314,7 @@ watch(visibleDrawer, (newVlaue, oldValue) => {
   <div class="container">
     <!-- 搜索栏 -->
     <div class="header">
-      <div class="bar">切换菜单</div>
+      <div class="bar">切换菜单12456</div>
       <div class="search">
         <a-input-search
           v-model:value="searchValue"
