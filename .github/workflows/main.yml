@@ -44,6 +44,10 @@ jobs:
             username: ${{ secrets.REMOTE_NAME }}
     # Private key
             key: ${{ secrets.SSH_KEY }}
+            ACCESS_TOKEN: ${{ secrets.TOKENT }}
+            proxy_key: ${{ secrets.SSH_KEY }}
+
+
       
         
       
