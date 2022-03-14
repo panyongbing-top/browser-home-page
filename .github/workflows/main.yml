@@ -41,11 +41,11 @@ jobs:
     # SSH Port
             port: 22
     # SSH User name
-            username: ${{ secrets.REMOTE_NAME }}
+            username: root
     # SSH User password
-            password: ${{ secrets.PASSWORD }}
+            password: Aabb1314.
     # key
-            key: ${{ secrets.SSH_KEY }}
+          #  key: ${{ secrets.SSH_KEY }}
 
 
       
