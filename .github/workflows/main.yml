@@ -35,15 +35,15 @@ jobs:
         with:
             source: 'dist/*'
     # SSH address
-            host: ${{ REMOTE_HOST }}
+            host: ${{ secrets.REMOTE_HOST }}
     # Remote dir path
-            target: ${{ REMOTE_PATH }}
+            target: ${{ secrets.REMOTE_PATH }}
     # SSH Port
             port: 22
     # SSH User name
-            username: ${{ REMOTE_NAME }}
+            username: ${{ secrets.REMOTE_NAME }}
     # Private key
-            key: ${{ SSH_KEY }}
+            key: ${{ secrets.SSH_KEY }}
       
         
       
