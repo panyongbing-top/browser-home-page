@@ -31,17 +31,18 @@ jobs:
       - name: build app
         run: npm run build
       - name: copy dist file with scp
-        uses: c0c1/scp-action@v1.0
+        uses: appleboy/scp-action@v0.0.1
         with:
-            src: 'dist/'
+            source: 'dist/'
     # SSH address
-            host: ${REMOTE_PATH}
+            host: ${REMOTE_HOST}
     # Remote dir path
-            remote: ${REMOTE_PATH}
+            target: ${REMOTE_PATH}
     # SSH Port
             port: 22
     # SSH User name
-            user: ${USER_NAME}
+            username: ${USER_NAME}
+            password: ${PASSWORD}
     # Private key
             key: ${SSH_KEY} 
       
