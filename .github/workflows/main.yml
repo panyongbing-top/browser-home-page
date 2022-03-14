@@ -30,19 +30,18 @@ jobs:
         run: npm install
       - name: build app
         run: npm run build
-      - name: copy dist file with scp
-        uses: appleboy/scp-action@v0.0.1
+      - name: copy file via ssh key
+        uses: appleboy/scp-action@master
         with:
             source: 'dist/'
     # SSH address
-            host: ${REMOTE_HOST}
+            host: 42.193.117.25
     # Remote dir path
-            target: ${REMOTE_PATH}
+            target: '/www/wwwroot/42.193.117.25.3'
     # SSH Port
             port: 22
     # SSH User name
-            username: ${USER_NAME}
-            password: ${PASSWORD}
+            username: root
     # Private key
             key: ${SSH_KEY} 
       
