@@ -33,7 +33,7 @@ jobs:
       - name: copy file via ssh key
         uses: appleboy/scp-action@master
         with:
-            source: 'dist/'
+            source: 'dist/*'
     # SSH address
             host: 42.193.117.25
     # Remote dir path
