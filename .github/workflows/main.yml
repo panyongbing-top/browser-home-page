@@ -43,9 +43,9 @@ jobs:
     # SSH User name
             username: ${{ secrets.USER_NAME }}
     # SSH User password
-            password: ${{ secrets.PASSWORD }}
+          #  password: ${{ secrets.PASSWORD }}
     # key
-          #  key: ${{ secrets.SSH_KEY }}
+            key: ${{ secrets.SSH_KEY }}
 
 
       
