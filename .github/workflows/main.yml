@@ -41,9 +41,9 @@ jobs:
     # SSH Port
             port: 22
     # SSH User name
-            username: root
+            username: ${{ secrets.USER_NAME }}
     # SSH User password
-            password: Aabb1314.
+            password: ${{ secrets.PASSWORD }}
     # key
           #  key: ${{ secrets.SSH_KEY }}
 
